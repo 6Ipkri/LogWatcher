@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="@dimen/margin_main">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_log_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_margin="@dimen/margin_main"/>
+
+    <TextView
+        android:id="@+id/geradoEmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_log_empty"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="@dimen/margin_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_getLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/get_log" />
+        <Button
+            android:id="@+id/bt_showLog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/show_log" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dump_log_message"
+        android:layout_marginTop="@dimen/margin_main"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_main">
+        <TableRow>
+            <Button
+                android:id="@+id/bt_appcrash"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/app_crash" />
+            <Button
+                android:id="@+id/bt_logErr"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/log_error" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_logWarn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/log_warning" />
+            <Button
+                android:id="@+id/bt_logInform"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/log_informative" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_logDebug"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/log_debug" />
+            <Button
+                android:id="@+id/bt_logVerbose"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/log_verbose" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/bt_assert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_assert" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_sendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email"
+        android:layout_margin="@dimen/margin_main"/>
+</LinearLayout>

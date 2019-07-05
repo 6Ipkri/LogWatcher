@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">LogWatcher</string>
+    <string name="get_log">Get Log To Text</string>
+    <string name="send_email">Send by E-mail</string>
+    <string name="last_log_label">Last log generated on:</string>
+    <string name="last_log_empty">--- no log file generated yet ! --- </string>
+    <string name="toast_no_file">There is no log file to be sent!</string>
+    <string name="toast_title_wait">Wait…</string>
+    <string name="toast_reading_device_log">Reading device LogCat…</string>
+    <string name="toast_saved_1">Log file </string>
+    <string name="toast_saved_2">has been saved!</string>
+    <string name="toast_error_saving">Error saving the log file on SDCard !</string>
+    <string name="email_subject">LogWatch LogCat file</string>
+    <string name="email_text">Log file attached:</string>
+    <string name="email_chooser">Sending LogCat file…</string>
+    <string name="log_error">  Log Error</string>
+    <string name="log_warning">  LOG Warning</string>
+    <string name="log_informative">  log informative</string>
+    <string name="log_debug">  log debug</string>
+    <string name="log_verbose">  log verbose</string>
+    <string name="log_assert">  log Assert</string>
+    <string name="app_crash">App crash</string>
+    <string name="show_log">show log</string>
+    <string name="dump_log_message">Dump LOG message:</string>
+    <string name="log_err_msg">----------------LOG ERROR----------------</string>
+    <string name="log_debug_msg">----------------LOG Debug----------------</string>
+    <string name="log_informative_msg">----------------LOG Informative----------------</string>
+    <string name="log_verbose_msg">----------------LOG Verbose----------------</string>
+    <string name="log_warning_msg">----------------LOG Warning----------------</string>
+    <string name="log_assert_msg">----------------LOG Assert----------------</string>
+
+</resources>
