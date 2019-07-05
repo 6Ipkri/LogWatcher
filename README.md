@@ -1,5 +1,19 @@
 # LOG Watcher
 
+## Permission
+
+```xml
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+```
+## Receiver
+```xml
+ <receiver android:name=".Alarm"></receiver>
+```
+
 ## Usage
 
 ```java
@@ -23,7 +37,7 @@ new SendEmailAsyncTask(context).execute();
         ...
  }
 ```
-- สำหรับเปลี่ยนอีเมลผู้รับและผู้ส่ง
+สำหรับเปลี่ยนอีเมลผู้รับและผู้ส่ง
 
 ### `FileHelper`
 อ่านไฟล์ .txt และ รวมเป็นไฟล์ zip
@@ -37,3 +51,9 @@ Zip(context)
 ```
 รวมไฟล์ทั้งหมดที่อยู่ใน directory
 
+### `Alarm`
+
+```java
+setAlarm(context)
+```
+ตั้งเวลาให้เก็บ log ทุกวัน
